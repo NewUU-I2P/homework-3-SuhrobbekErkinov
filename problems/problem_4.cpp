@@ -6,8 +6,9 @@ std::string problemSolution4(const std::string &macAddress) {
     std::string result;
     if (macAddress[01] == "FF") {
         result = "Broadcast";
-    } else {
-        switch (macAddress[1]) {
+        return result;
+    }
+    switch (macAddress[1]) {
             case '0':
                 result = "Unicast";
                 break;
@@ -57,7 +58,6 @@ std::string problemSolution4(const std::string &macAddress) {
                 result = "Multicast";
                 break;
         }
-    }
     // make use of control flow statements
     // return result;
     return result;
