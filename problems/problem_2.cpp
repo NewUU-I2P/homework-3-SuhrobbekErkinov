@@ -1,15 +1,7 @@
 float problemSolution2(float i, float j, float k) {
     float result;
     // write your code here;
-    cin >> i >> j >> k;
-    if (i > j && i > k) {
-        result = i;
-    } else if (j > i && j > k) {
-        result = j;
-    } else {
-        result = k;
-    }
-
+    (i > j && i > k) ? result = i : (j > i && j > k) ? result = j : result = k;
 
     return result;
 }
