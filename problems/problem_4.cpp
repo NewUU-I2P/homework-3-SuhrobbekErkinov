@@ -6,57 +6,7 @@ std::string problemSolution4(const std::string &macAddress) {
     std::string result;
     if (macAddress[0] == 'F' && macAddress[1] == 'F') {
         result = "Broadcast";
-    }
-    /*switch (macAddress[1]) {
-            case '0':
-                result = "Unicast";
-                break;
-            case '1':
-                result = "Multicast";
-                break;
-            case '2':
-                result = "Unicast";
-                break;
-            case '3':
-                result = "Multicast";
-                break;
-            case '4':
-                result = "Unicast";
-                break;
-            case '5':
-                result = "Multicast";
-                break;
-            case '6':
-                result = "Unicast";
-                break;
-            case '7':
-                result = "Multicast";
-                break;
-            case '8':
-                result = "Unicast";
-                break;
-            case '9':
-                result = "Multicast";
-                break;
-            case 'A':
-                result = "Unicast";
-                break;
-            case 'B':
-                result = "Multicast";
-                break;
-            case 'C':
-                result = "Unicast";
-                break;
-            case 'D':
-                result = "Multicast";
-                break;
-            case 'E':
-                result = "Unicast";
-                break;
-            case 'F':
-                result = "Multicast";
-                break;
-        } */
+    } 
     else if ((int)macAddress[1] % 2 == 0) {
         result = "Unicast";
     }
